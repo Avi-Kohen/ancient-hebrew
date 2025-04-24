@@ -1,3 +1,5 @@
+# Version catalog for Ancient Hebrew project
+
 [versions]
 agp = "8.7.3"
 kotlin = "1.9.24"
@@ -5,28 +7,44 @@ coreKtx = "1.16.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
-appcompat = "1.6.1"
-material = "1.10.0"
-constraintlayout = "2.2.1"
-lifecycleLivedataKtx = "2.8.7"
-lifecycleViewmodelKtx = "2.8.7"
-navigationFragmentKtx = "2.8.9"
-navigationUiKtx = "2.8.9"
+material = "1.12.0"
+compose = "1.8.0"
+activityCompose = "1.10.1"
+navigationCompose = "2.8.9"
+cameraX = "1.4.2"
+mlkit = "16.1.4"
+moshi = "1.14.0"
+moshiKotlin = "1.14.0"
+composeUiTestJunit4 = "1.8.0"
 
 [libraries]
-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-core-ktx = { group = "androidx.core",      name = "core-ktx",               version.ref = "coreKtx" }
+junit = { group = "junit",                     name = "junit",                version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext",    name = "junit",                version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
-androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
-androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
-androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
-androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
-androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
-androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+material = { group = "com.google.android.material", name = "material",          version.ref = "material" }
+
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version = "2.8.7" }
+
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose",       version.ref = "activityCompose" }
+androidx-compose-ui = { group = "androidx.compose.ui",           name = "ui",                   version.ref = "compose" }
+androidx-compose-material = { group = "androidx.compose.material", name = "material",             version.ref = "compose" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview",   version.ref = "compose" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui",         name = "ui-tooling",         version.ref = "compose" }
+androidx-navigation-compose = { group = "androidx.navigation",         name = "navigation-compose", version.ref = "navigationCompose" }
+
+androidx-camera-camera2 = { group = "androidx.camera",    name = "camera-camera2",    version.ref = "cameraX" }
+androidx-camera-lifecycle = { group = "androidx.camera",    name = "camera-lifecycle",  version.ref = "cameraX" }
+androidx-camera-view = { group = "androidx.camera",         name = "camera-view",       version.ref = "cameraX" }
+
+google-mlkit-text-recognition = { group = "com.google.mlkit", name = "text-recognition", version = "16.0.1" }
+
+squareup-moshi = { group = "com.squareup.moshi",          name = "moshi",             version.ref = "moshi" }
+squareup-moshi-kotlin = { group = "com.squareup.moshi",    name = "moshi-kotlin",      version.ref = "moshiKotlin" }
+
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4",  version.ref = "composeUiTestJunit4" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-android      = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 
